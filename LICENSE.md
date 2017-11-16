@@ -1,6 +1,9 @@
 ﻿
 ![Licencia CC](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png  "Licencia CC")
+
+
 Este obra está bajo una licencia de Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional.
+
 
 You are free to:
 
