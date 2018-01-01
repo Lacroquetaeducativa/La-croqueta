@@ -5,7 +5,10 @@ Carcasa para el shield para arduino lacreducativa 1.0
 ===
 Con esta mejora, pretendemos mejorar la estetica de nuestro Shield, a la vez que lo hacemos más seguro de cara a la parte práctica en un entorno escolar, ya que al manipular las placas, puede haber algún que otro problema.
 ==
-Ha sido diseñado con FreeCad y su impresión  en 3D aún no ha sido probada.(Subiremos resultados después de su impresión)
+Ha sido diseñado con FreeCad(Gracias a los tutoriales de @obijuan_cube) y su impresión  en 3D aún no ha sido probada.(Subiremos resultados después de su impresión)
+ Se compone de dos piezas:
+	1. La parte que alberga la placa Arduino y el Shield, que tiene dos orificios, para mantener con corriente 		la placa y/o cargar el programa en ella.
+	2. Una tapa para la parte superior, con orificios para dejar a la vista los LEDS y el LDR.
 
 
 ==
