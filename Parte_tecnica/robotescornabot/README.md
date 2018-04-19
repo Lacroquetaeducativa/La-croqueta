@@ -1,12 +1,15 @@
-# AVISO!! En construcción, estos días retocaré muchas cosas aunque lo esencial siempre lo tendrás a mano :P
+﻿
+# CLONADO DEL REPOSITORIO DE @PABLORUBMA
+
+
   
 # Escornabot DIY  
   
-Material recopilado de [Xoan Sampaiño](https://github.com/xoan), [Rafa Couto](https://github.com/rafacouto), [XDeSIG](https://github.com/xdesig), [Jorge Lobo Martínez](https://github.com/lobotic) y [mgesteiro](https://github.com/mgesteiro)   
+Material recopilado de [Xoan Sampaiño](https://github.com/xoan), [Rafa Couto](https://github.com/rafacouto), [XDeSIG](https://github.com/xdesig), [Jorge Lobo Martínez](https://github.com/lobotic),[mgesteiro](https://github.com/mgesteiro)   y [Pablo Rubio](https://github.com/pablorubma)
   
 Web oficial del robot escornabot http://escornabot.com
 
-Vamos a describir uno tras otros todos los pasos a seguir para montar la versión DIY (la de los cablecicos)
+
   
   
   
@@ -23,15 +26,7 @@ Rueda izquierda|![wheel-l.stl](imagenes/wheel-l.png) | [wheel-l.stl](archivos-st
 Rueda derecha|![wheel-r.stl](imagenes/wheel-r.png) | [wheel-r.stl](archivos-stl/wheel-r.stl)  
   
   
-### 1.1 Opcional
-  
-En mi caso, no monto la pieza "sujeción interruptor". Dejo los cables para conectar macho con hembra y enseñar a los peques la conexión de los cables.
 
-Descripción         | Imagen          | Archivo          
-------------- | ------------- | ------------- 
-Sujeción interruptor|![Addon-SwitchHolder.stl](imagenes/Addon-SwitchHolder.png) | [Addon-SwitchHolder.stl](archivos-stl/Addon-SwitchHolder.stl)
-  
-  
   
 # 2. Componentes Electrónicos
   
