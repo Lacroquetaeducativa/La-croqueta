@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>La croqueta educativa</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/blog-post.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">La croqueta educativa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Inicio
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tutorial.html">Tutoriales</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacto</a>
+            </li><li class="nav-item">
+              <a class="nav-link" href="anteindex.html">Anteproyecto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="proindex.html">Proyecto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Resultados de la investigación.html">Resultados</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+          <!-- Title -->
+          &nbsp
+          <h1 class="mt-4">Usando un LED RGB	</h1>
+
+          <!-- Author -->
+          <p class="lead">
+            by
+Vanesa Hidalgo          </p>
+
+          <hr>
+
+          <!-- Date/Time -->
+  <p>Publicado en  Noviembre 30, 2017 at 12:00 PM</p>
+
+          <hr>
+
+          <!-- Preview Image -->
+  <img class="img-fluid rounded" src="images/rgbled.png" alt="">
+
+          <hr>
+
+          <!-- Post Content -->
+          <p class="lead">En este tutorial aprenderemos a  crear colores con un LED RGB.</p>
+          
+          <h5>El material necesario es...</h5>
+<ul>
+<li>Placa Arduino</li>
+<li>Una Protoboard</li>
+<li>Un LED RGB</li>
+<li>Una resistencia de 220 Ohmios</li>
+<li>Cables</li>
+<li>Un ordenador</li>
+<li>Ganas de aprender</li>
+</ul>
+
+          <h5>¿Qué es un LED RGB?</h5>
+
+
+          <p>Es un LED  formado  por 3 LEDs de 3 colores distintos, Red/Green/Blue o Rojo/Verde/Azul. ¡Controlando la intensidad de cada uno de ellos podemos mezclar los colores!
+
+</p>
+
+          <p>Se suele usar en arte y en múltiples objetos para crear colores..</p>
+          <p>Las pantallas son grandes matrices de LEDS RGB.
+</p>
+
+
+
+
+        
+            <p class="mb-0"><h5>Conexión en la protoboard</h5></p>
+            
+  <p>Como para mezclar los colores tenemos que jugar con la intensidad de cada uno de los LEDs que componen nuestro LED RGB, vamos a usar las salidas “analógicas” que tiene Arduino, mejor llamadas PWM. Esto es, tenemos que usar los pines digitales que tienen una marca (~) justo al lado del número. En Genuino UNO estos pines son el 3, 5, 6, 9, 10 y 11.</p>
+
+        
+<img src="images/rgb_conexiones.png" width="600" height="480" alt=""/>
+<hr>
+
+
+          
+   <h5>Código Arduino</h5>  
+ 
+ <p>Podemos controlar la intesidad de cada uno de los colores (rojo, verde y azul) por separado, añadiendo las cantidades de color que necesitemos de cada uno de ellos para conseguir el color que estemos buscando.</p>
+ <p>const int LED_ROJO = 6;  // Pin al que está conectado el color rojo
+const int LED_VERDE = 5; // Pin al que está conectado el color verde
+const int LED_AZUL = 6;  // Pin al que está conectado el color azul
+
+void setup() {
+  // Inicializamos los LEDs
+  pinMode(LED_ROJO, OUTPUT);
+  pinMode(LED_VERDE, OUTPUT);
+  pinMode(LED_AZUL, OUTPUT);
+}
+
+void loop() {
+  analogWrite(LED_ROJO, 0);    // Color rojo ON
+  delay(1000);
+  analogWrite(LED_ROJO, 255);  // Color rojo OFF
+  analogWrite(LED_VERDE, 0);   // Color verde ON
+  delay(1000);
+  analogWrite(LED_VERDE, 255);  //Color verde OFF
+  analogWrite(LED_AZUL, 0);    // Color azul ON
+  delay(1000);
+  analogWrite(LED_AZUL, 255);  // Color azul OFF
+}</p>
+ 
+
+
+
+
+
+
+<h5>Teoría del color</h5>
+<img src="images/teoriacolor.jpg" width="400" height="" alt=""/> 
+<p>Para mostrar el color amarillo, debemos de encender tanto el LED rojo como el verde:
+analogWrite(LED_ROJO, 0); // Color rojo ON
+analogWrite(LED_VERDE, 0); // Color verde ON
+</p>
+<p>Combinamos los colores de la forma que se aprecía en el esquema, para así crear distintos colores.</p>
+<script src="https://gist.github.com/eloisaromero/895a25fb1c427409e7073dd66b3ac3b6.js"></script>
+
+<a href="https://fabricadigital.org/leccion/como-usar-un-led-rgb-con-arduino/archivos/ldr.ino" download>Pulse para ir a la página de la que hemos obtenido la información para este tutorial </a>
+
+
+<!-- Single Comment -->
+          
+
+          <!-- Comment with nested comments -->
+          
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+&nbsp
+          <!-- Search Widget -->
+          &nbsp
+          <div class="card my-4">
+            <h5 class="card-header">Search</h5>
+            <div class="card-body">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button class="btn btn-secondary" type="button">Go!</button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Categorias</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">Arduino</a>
+                    </li>
+                    <li>
+                      <a href="#">FreeCad</a>
+                    </li>
+                    <li>
+                      <a href="#">Electrónica</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side Widget -->
+          
+
+  </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+     <!-- Footer -->
+   <a href="https://twitter.com/lacreducativa"> <footer class="py-5 bg-dark"><img src="images/social-icon-twitter.png" href="https://twitter.com/lacreducativa" width="42" height="42" alt="23"/>
+      <div class="container">
+       </a>
+        <p class="m-0 text-center text-white">Copyright &copy; LCE 2017</p>
+      </div>
+      
+    
+      
+      
+      
+      
+      
+      
+      
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
